@@ -45,7 +45,7 @@ class repository_cloudstudio extends repository {
      * @param object $context
      * @param array $options
      */
-    public function __construct($repositoryid, $context = SYSCONTEXTID, $options = array()) {
+    public function __construct($repositoryid, $context = SYSCONTEXTID, $options = []) {
         parent::__construct($repositoryid, $context, $options);
     }
 
@@ -114,23 +114,6 @@ class repository_cloudstudio extends repository {
     }
 
     /**
-     * get type config form function
-     *
-     * This function is the form of module settings.
-     *
-     * @param MoodleQuickForm $mform
-     * @param string $classname
-     */
-    public static function type_config_form__($mform, $classname = "repository") {
-        parent::type_config_form($mform);
-        $key = get_config("repository_cloudstudio", "key");
-        $mform->addElement("text", "key", get_string("key", "repository_cloudstudio") . " ("
-            . get_string("key_description", "repository_cloudstudio") . ")", array("size" => "40"));
-        $mform->setDefault("key", $key);
-        $mform->setType("key", PARAM_RAW_TRIMMED);
-    }
-
-    /**
      * Private method to search remote videos
      *
      * @param string $searchtext
@@ -155,7 +138,7 @@ class repository_cloudstudio extends repository {
                 "icon" => $arquivo->thumb,
                 "date" => $arquivo->data,
                 "source" => $arquivo->url,
-                "license" => "Cloud Studio (https://{$url}/)"
+                "license" => "Cloud Studio (https://{$url}/)",
             ];
         }
 
