@@ -39,17 +39,6 @@ require_once("{$CFG->dirroot}/repository/lib.php");
 class repository_cloudstudio extends repository {
 
     /**
-     * Youtube plugin constructor
-     *
-     * @param int $repositoryid
-     * @param object $context
-     * @param array $options
-     */
-    public function __construct($repositoryid, $context = SYSCONTEXTID, $options = []) {
-        parent::__construct($repositoryid, $context, $options);
-    }
-
-    /**
      * Get file listing.
      *
      * @param string $encodedpath
