@@ -59,4 +59,3 @@ This project is licensed under **GPL v3**. Refer to the [LICENSE](LICENSE) file 
 
 **Created by: [EadTech](https://github.com/eadtech-moodle)**  
 Making learning more interactive! 🎓
-
