@@ -29,5 +29,27 @@
  * @return bool Return true.
  */
 function xmldb_repository_cloudstudio_install() {
+    global $DB;
+
+    $repository = (object)[
+        "type" => "cloudstudio",
+        "visible" => 1,
+        "sortorder" => 2,
+    ];
+    $repository->id = $DB->insert_record("repository", $repository);
+
+    $repository_instances = (object)[
+        "name" => "",
+        "typeid" => $repository->id,
+        "userid" => 0,
+        "contextid" => 1,
+        "username" => null,
+        "password" => null,
+        "timecreated" => time(),
+        "timemodified" => time(),
+        "readonly" => 0,
+    ];
+    $repository_instances->id = $DB->insert_record("repository_instances", $repository_instances);
+
     return true;
 }
