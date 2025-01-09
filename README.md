@@ -2,51 +2,43 @@
 
 [![Build Status](https://travis-ci.org/cloudstudio/moodle-repository_cloudstudio.svg?branch=master)](https://travis-ci.org/cloudstudio/moodle-repository_cloudstudio)
 
-CloudStudio is a CMS solution for securely publishing and organizing videos. It offers advanced features for storage, control, and delivery of audiovisual content.
+The **CloudStudio File Repository** plugin simplifies the integration of files stored in CloudStudio directly into the Moodle platform. This plugin provides educators and administrators with a seamless, efficient way to access and use their files, such as videos, PDFs, images, and other content, directly from the Moodle File Picker. 
 
-You can integrate it with your Moodle to provide your students with a unique and secure experience.
+## Features
+- **Direct Integration**: Access CloudStudio files directly within Moodle without manual file transfers.
+- **Enhanced Workflow**: Quickly insert media and resources into any text editor or file upload area.
+- **File Navigation**: Browse your CloudStudio-hosted files in an intuitive interface.
+- **Streamlined User Experience**: Eliminate repetitive uploads, saving time and effort.
 
-## Requirements
-
-- Moodle 3.9 or higher.
-- Mandatory dependency: **[CloudStudio (moodle-mod_cloudstudio)](https://github.com/eadtech-moodle/moodle-mod_cloudstudio)**. Ensure this module is installed and configured before using this plugin.
+## How It Works
+Once the **CloudStudio File Repository** plugin is activated, it appears as an option in the Moodle File Picker. Users can:
+1. Open the File Picker within any text editor or file-uploadable area in Moodle.
+2. Select the "CloudStudio" option.
+3. Browse and choose the desired file directly from CloudStudio.
+4. Insert the file seamlessly into the Moodle course or resource.
 
 ## Installation
+1. Download the plugin from [GitHub](https://github.com/eadtech-moodle/moodle-repository_cloudstudio).
+2. Extract the plugin into the `/repository/cloudstudio` directory of your Moodle installation.
+3. Go to the **Site Administration** > **Plugins** > **Manage Repositories** in Moodle.
+4. Enable the **CloudStudio File Repository** and configure the required settings.
 
-### 1. Download the plugin
+## Requirements
+- Moodle 3.9 or later.
+- A CloudStudio account with files ready to access.
 
-Clone the repository or download the compressed files:
+## Configuration
+1. Navigate to **Site Administration** > **Plugins** > **Repositories** > **CloudStudio**.
+2. Set up the API key or authentication credentials for CloudStudio.
+3. Configure any additional settings as needed.
 
-```bash
-git clone https://github.com/eadtech-moodle/moodle-repository_cloudstudio.git
-```
-
-### 2. Copy to the correct directory
-
-- Extract or copy the plugin folder to the following path in your Moodle:
-
-  ```plaintext
-  [Moodle_Directory]/repository/cloudstudio
-  ```
-
-### 3. Complete the installation
-
-- Access the Moodle administration panel.
-- Navigate to **Site Administration > Notifications**.
-- Follow the steps provided to complete the installation.
-
-### 4. Enable the media player
-
-After installation, follow these steps to enable the player:
-
-1. Go to **Site Administration** > **Plugins** >  **Repositories** > **Manage repositories**.
-2. Activate the **CloudStudio File Repository** option.
-
-## How to Use
-
-1. Once the media player is activated, you can use the CloudStudio player in any Moodle text editor.
-2. Add a CloudStudio video, configure the display options, and save the changes.
-3. The video will be displayed using the configured player.
+## Usage
+- To use the CloudStudio File Repository:
+  1. Open any text editor or file-upload field in Moodle.
+  2. Click the **File Picker** icon.
+  3. Choose **CloudStudio** from the repository list.
+  4. Browse your CloudStudio files and select the desired item.
+  5. Insert the file into your Moodle activity or resource.
 
 ## Support
 
