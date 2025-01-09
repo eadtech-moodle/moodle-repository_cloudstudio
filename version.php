@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2024010601;
+$plugin->version = 2025010900;
 $plugin->requires = 2020061500;
-$plugin->release = "1.0.12";
+$plugin->release = "1.0.13";
 $plugin->component = "repository_cloudstudio";
 $plugin->maturity = MATURITY_STABLE;
 
 $plugin->dependencies = [
     "mod_cloudstudio" => 2024112501,
+    "media_cloudstudio" => 2025010600,
 ];
