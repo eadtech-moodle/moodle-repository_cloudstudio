@@ -38,7 +38,7 @@ function xmldb_repository_cloudstudio_install() {
     ];
     $repository->id = $DB->insert_record("repository", $repository);
 
-    $repository_instances = (object)[
+    $repositoryinstances = (object)[
         "name" => "",
         "typeid" => $repository->id,
         "userid" => 0,
@@ -49,7 +49,7 @@ function xmldb_repository_cloudstudio_install() {
         "timemodified" => time(),
         "readonly" => 0,
     ];
-    $repository_instances->id = $DB->insert_record("repository_instances", $repository_instances);
+    $repositoryinstances->id = $DB->insert_record("repository_instances", $repositoryinstances);
 
     return true;
 }
